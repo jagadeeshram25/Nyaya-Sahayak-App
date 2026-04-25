@@ -1,0 +1,40 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+node_modules/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# System
+thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Vector databases & Embeddings
+blobs/
+chroma/
+
+# Large Data Files
+data/processed/
+
+# Allow FAISS index for deployment
+!data/vector_store/faiss_index/index.faiss
+!data/vector_store/faiss_index/index.pkl
+
+# Misc - Ignore generic PDFs but allow the critical source PDF
+*.pdf
+!data/raw/BNS.pdf
+
